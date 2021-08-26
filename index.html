@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Web Sockets</title>
 </head>
+
 <body>
     <h1>Web Sockets</h1>
+    <p>Status: <span id="status"></span></p>
+    <form>
+        <input type="text" id="message">
+        <input type="submit" id="submitButton" value="Send">
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Messages</th>
+            </tr>
+        </thead>
+        <tbody id="messagesTable">
+        </tbody>
+    </table>
     <script src="./script.js"></script>
 </body>
